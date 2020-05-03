@@ -38,6 +38,7 @@ bool ispis_podataka(string prezimeIme[], unsigned long long int brRacuna[],doubl
 
 int main()
 {
+    system("cls");
 
     int brKlijenata=0;
     unsigned long long int *brRacuna=new unsigned long long int[1000];
@@ -150,8 +151,15 @@ int main()
                 for(int i=0; i<brKlijenata; i++)
                     cout << brRacuna2[i]<< ", "<< prezimeIme2[i]<<", "<<saldo2[i]<<endl;
         }
-
-
+        else if(izbor==7)
+               {
+                       cout << "Izlaz iz programa" << endl;
+                       break;
+               }
+               else
+                   cout << "Krivi unos. << endl";
+               cout<<endl;
+               system("pause");
         }
     return 0;
 }
